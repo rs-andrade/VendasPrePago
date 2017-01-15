@@ -17,6 +17,15 @@ namespace ProdutosPrePago.Test
         }
 
         [TestMethod]
+        public void DeveRecarregar25e25ComTaxade76Centavos()
+        {
+            var contrato = CriarContrato(3);
+            contrato.Recarregar(25.25m, new BuilderFilaFaturamento());
+            Assert.AreEqual(24.49m, contrato.ConsultarSaldo());
+            Assert.AreEqual(2, contrato.Movimentacoes.Count);
+        }
+
+        [TestMethod]
         public void DeveRecarregar100ComTaxade0()
         {
             var contrato = CriarContrato(0);
