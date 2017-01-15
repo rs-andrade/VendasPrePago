@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProdutosPrePago
+namespace ProdutosPrePago.Services
 {
-    public class Fatura
+    public class FaturarRequest
     {
         public int IdCliente { get; set; }
-        public string Descricao { get; set; }
+        public string Desccricao { get; set; }
         public decimal Valor { get; set; }
     }
 }

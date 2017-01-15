@@ -43,15 +43,20 @@
     <Compile Include="Cliente.cs" />
     <Compile Include="Contrato.cs" />
     <Compile Include="Entity.cs" />
+    <Compile Include="FilaFaturamento.cs" />
+    <Compile Include="NaoAtingiuValorMinimoRecargaException.cs" />
+    <Compile Include="SaldoInsuficienteParaConsumoException.cs" />
     <Compile Include="TipoMovimentacaoEnum.cs" />
     <Compile Include="Fatura.cs" />
     <Compile Include="Movimentacao.cs" />
     <Compile Include="Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TipoMovimentacao.cs" />
-    <Compile Include="TiposMovimentacao\TipoMovimentcaoConsumo.cs" />
-    <Compile Include="TiposMovimentacao\TipoMovimentcaoTaxaRecarga.cs" />
-    <Compile Include="TiposMovimentacao\TipoMovimentcaoRecarga.cs" />
+    <Compile Include="TiposMovimentacao\TipoMovimentacaoConsumo.cs" />
+    <Compile Include="TiposMovimentacao\TipoMovimentacaoTaxaRecarga.cs" />
+    <Compile Include="TiposMovimentacao\TipoMovimentacaoRecarga.cs" />
+    <Compile Include="ValorInvalidoParaConsumoException.cs" />
+    <Compile Include="ValorInvalidoParaRecargaException.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DiagramaClasses.cd" />

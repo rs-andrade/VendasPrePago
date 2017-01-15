@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace ProdutosPrePago
 {
-    public class Fatura
+    public class FilaFaturamento
     {
-        public int IdCliente { get; set; }
-        public string Descricao { get; set; }
-        public decimal Valor { get; set; }
+        public static void IncluirNaFila(Fatura fatura)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

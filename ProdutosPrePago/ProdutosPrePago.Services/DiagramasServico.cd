@@ -67,5 +67,12 @@
       <NewMemberFileName>ConsultarClienteRequest.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="ProdutosPrePago.Services.FaturarRequest">
+    <Position X="5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAEAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>FaturarRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

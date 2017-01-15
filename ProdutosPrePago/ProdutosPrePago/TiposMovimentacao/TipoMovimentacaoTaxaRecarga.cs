@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProdutosPrePago.TiposMovimentacao
 {
-    public class TipoMovimentcaoConsumo : TipoMovimentacao
+    public class TipoMovimentacaoTaxaRecarga : TipoMovimentacao
     {
-        
+        public decimal PercentualTaxa { get; set; }
     }
 }

@@ -12,5 +12,15 @@ namespace ProdutosPrePago
         {
             throw new NotImplementedException();
         }
+
+        public List<Contrato> ListarContratos()
+        {
+            throw new NotImplementedException();
+        }
+
+        public static Cliente ConsultarPorIdCliente(int IdCliente)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

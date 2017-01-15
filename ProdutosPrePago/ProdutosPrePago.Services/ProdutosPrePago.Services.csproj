@@ -11,6 +11,7 @@
     <AssemblyName>ProdutosPrePago.Services</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,6 +33,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,11 +51,25 @@
     <Compile Include="ConsumoRequest.cs" />
     <Compile Include="ConsultarContratosRequest.cs" />
     <Compile Include="Contrato.cs" />
+    <Compile Include="FaturarRequest.cs" />
+    <Compile Include="IProdutosPrePagos.cs" />
+    <Compile Include="ProdutosPrePagos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecargaRequest.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="DiagramasServico.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProdutosPrePago.Fault\ProdutosPrePago.Fault.csproj">
+      <Project>{15191c68-9e37-4b0c-a74c-c7e62843943e}</Project>
+      <Name>ProdutosPrePago.Fault</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProdutosPrePago\ProdutosPrePago.csproj">
+      <Project>{bb37b166-8bc6-493c-b504-7c1595eb6968}</Project>
+      <Name>ProdutosPrePago</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

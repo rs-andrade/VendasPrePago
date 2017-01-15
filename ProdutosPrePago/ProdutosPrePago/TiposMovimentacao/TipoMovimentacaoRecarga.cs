@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProdutosPrePago.TiposMovimentacao
 {
-    public class TipoMovimentcaoRecarga : TipoMovimentacao
+    public class TipoMovimentacaoRecarga : TipoMovimentacao
     {
         
     }
