@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProdutosPrePago
 {
-    public class FilaFaturamento
+    public class FilaFaturamento : IFilaFaturamento
     {
-        public static void IncluirNaFila(Fatura fatura)
+        public void IncluirNaFila(Fatura fatura)
         {
             throw new NotImplementedException();
         }

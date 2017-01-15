@@ -60,7 +60,7 @@ namespace ProdutosPrePago.Services
             
             try
             {
-                contrato.Recarregar(recargaRequest.ValorRecarga);
+                contrato.Recarregar(recargaRequest.ValorRecarga, new FilaFaturamento());
             }
             catch (ValorInvalidoParaRecargaException ex)
             {

@@ -7,21 +7,29 @@ using System.Threading.Tasks;
 
 namespace ProdutosPrePago
 {
-    public class Contrato: Entity
+    public class Contrato : Entity, IContrato
     {
-        public Cliente Cliente { get; set; }
-        public Produto Produto { get; set; }  
-        public string Identificacao { get; set; }      
-        public List<Movimentacao> Movimentacoes { get; private set; }
-        public DateTime DataDaContratacao { get; set; }
+        public ICliente Cliente { get; private set; }
+        public IProduto Produto { get; private set; }  
+        public string Identificacao { get; private set; }      
+        public List<IMovimentacao> Movimentacoes { get; private set; }
+        public DateTime DataDaContratacao { get; private set; }
 
-        public void Recarregar(decimal valorRecarga)
+        public Contrato(ICliente cliente, IProduto produto, string identificacao)
+        {
+            Cliente = cliente;
+            Produto = produto;
+            Identificacao = identificacao;
+            DataDaContratacao = DateTime.Now.Date;
+        }
+
+        public void Recarregar(decimal valorRecarga, IFilaFaturamento filaFaturamento)
         {
             if (valorRecarga <= 0)
                 throw new ValorInvalidoParaRecargaException();
                 
             var movimentacaoRecarga = new Movimentacao {
-                Data = DateTime.Now,
+                Data = DateTime.Now.Date,
                 Valor = valorRecarga,
                 Tipo = new TipoMovimentacaoRecarga { TipoDaMovimentacao = TipoMovimentacaoEnum.Recarga}
             };
@@ -35,10 +43,10 @@ namespace ProdutosPrePago
                     Valor = valorTaxa,
                     Descricao = Produto.Descricao
                 };
-                FilaFaturamento.IncluirNaFila(fatura);            
+                filaFaturamento.IncluirNaFila(fatura);            
                 movimentacaoTaxa = new Movimentacao
                 {
-                    Data = DateTime.Now,
+                    Data = DateTime.Now.Date,
                     Valor = -valorTaxa,
                     Tipo = new TipoMovimentacaoTaxaRecarga { TipoDaMovimentacao = TipoMovimentacaoEnum.TaxaRecarga, PercentualTaxa = Produto.TaxaRecarga }
                 };
@@ -57,7 +65,7 @@ namespace ProdutosPrePago
             {
                 var movimentacaoRecarga = new Movimentacao
                 {
-                    Data = DateTime.Now,
+                    Data = DateTime.Now.Date,
                     Valor = -valorConsumo,
                     Tipo = new TipoMovimentacaoConsumo { TipoDaMovimentacao = TipoMovimentacaoEnum.Recarga }
                 };

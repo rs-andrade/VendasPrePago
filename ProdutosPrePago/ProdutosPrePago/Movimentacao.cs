@@ -2,9 +2,9 @@
 
 namespace ProdutosPrePago
 {
-    public class Movimentacao: Entity
+    public class Movimentacao : Entity, IMovimentacao
     {
-        public TipoMovimentacao Tipo { get; set; }
+        public ITipoMovimentacao Tipo { get; set; }
         public DateTime Data { get; set; }
         public decimal Valor { get; set; }
     }

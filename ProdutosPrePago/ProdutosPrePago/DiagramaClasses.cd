@@ -1,36 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="ProdutosPrePago.Cliente">
-    <Position X="2.75" Y="2" Width="1.75" />
+    <Position X="2.5" Y="2.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAQAAAAAAAAAAAAAAAAgAACAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Cliente.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="ProdutosPrePago.Contrato">
-    <Position X="6" Y="3" Width="2" />
-    <AssociationLine Name="Movimentacoes" Type="ProdutosPrePago.Movimentacao" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="6" Y="3.875" />
-        <Point X="5.131" Y="3.875" />
-        <Point X="5.131" Y="3.875" />
-        <Point X="2" Y="3.875" />
-      </Path>
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.35" Y="0.039" />
-      </MemberNameLabel>
-    </AssociationLine>
+    <Position X="6.5" Y="3.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAIQQAAAAAAAACCAAAAAAAgACAAAAAAABAAAAAE=</HashCode>
       <FileName>Contrato.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Cliente" />
       <Property Name="Produto" />
+      <Property Name="Cliente" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
       <Property Name="Movimentacoes" />
     </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="ProdutosPrePago.Entity">
     <Position X="3.75" Y="0.5" Width="1.5" />
@@ -38,9 +29,10 @@
       <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entity.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="ProdutosPrePago.Fatura">
-    <Position X="8.75" Y="4.5" Width="1.5" />
+    <Position X="9.75" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAABAAAAAAAAAAAEAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Fatura.cs</FileName>
@@ -48,13 +40,6 @@
   </Class>
   <Class Name="ProdutosPrePago.Movimentacao">
     <Position X="0.5" Y="2.75" Width="1.5" />
-    <AssociationLine Name="Tipo" Type="ProdutosPrePago.TipoMovimentacao" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="2" Y="4.062" />
-        <Point X="4.312" Y="4.062" />
-        <Point X="4.312" Y="4.75" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAABAAAAAAAAAAAAQ=</HashCode>
       <FileName>Movimentacao.cs</FileName>
@@ -62,16 +47,18 @@
     <ShowAsAssociation>
       <Property Name="Tipo" />
     </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="ProdutosPrePago.Produto">
-    <Position X="8.75" Y="2.25" Width="1.5" />
+    <Position X="9.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAIAQAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Produto.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="ProdutosPrePago.TipoMovimentacao">
-    <Position X="4" Y="4.75" Width="1.75" />
+    <Position X="4.25" Y="5.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TipoMovimentacao.cs</FileName>
@@ -79,65 +66,95 @@
     <ShowAsAssociation>
       <Field Name="TipoDaMovimentacao" />
     </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="ProdutosPrePago.TiposMovimentacao.TipoMovimentacaoConsumo">
-    <Position X="7" Y="6.25" Width="2.25" />
+    <Position X="7" Y="7.25" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TiposMovimentacao\TipoMovimentacaoConsumo.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ProdutosPrePago.TiposMovimentacao.TipoMovimentacaoRecarga" Collapsed="true">
-    <Position X="1" Y="6.25" Width="2.25" />
+  <Class Name="ProdutosPrePago.TiposMovimentacao.TipoMovimentacaoRecarga">
+    <Position X="1" Y="7.25" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TiposMovimentacao\TipoMovimentacaoRecarga.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProdutosPrePago.TiposMovimentacao.TipoMovimentacaoTaxaRecarga">
-    <Position X="3.75" Y="6.25" Width="2.75" />
+    <Position X="3.75" Y="7.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TiposMovimentacao\TipoMovimentacaoTaxaRecarga.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProdutosPrePago.FilaFaturamento">
-    <Position X="0.5" Y="7.25" Width="1.5" />
+    <Position X="0.5" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>FilaFaturamento.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="ProdutosPrePago.NaoAtingiuValorMinimoRecargaException" Collapsed="true">
-    <Position X="2.25" Y="7.75" Width="4" />
+    <Position X="2.25" Y="8.75" Width="4" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>NaoAtingiuValorMinimoRecargaException.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProdutosPrePago.SaldoInsuficienteParaConsumoException" Collapsed="true">
-    <Position X="6.5" Y="7.75" Width="3.75" />
+    <Position X="6.5" Y="8.75" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>SaldoInsuficienteParaConsumoException.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProdutosPrePago.ValorInvalidoParaConsumoException" Collapsed="true">
-    <Position X="0.5" Y="8.75" Width="3.5" />
+    <Position X="0.5" Y="9.75" Width="3.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ValorInvalidoParaConsumoException.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProdutosPrePago.ValorInvalidoParaRecargaException" Collapsed="true">
-    <Position X="4.25" Y="8.75" Width="2.75" />
+    <Position X="4.25" Y="9.75" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ValorInvalidoParaRecargaException.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Interface Name="ProdutosPrePago.IMovimentacao">
+    <Position X="9.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAABAAAAAAAAAAAAQ=</HashCode>
+      <FileName>IMovimentacao.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ProdutosPrePago.IProduto" Collapsed="true">
+    <Position X="4.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAQAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IProduto.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ProdutosPrePago.ITipoMovimentacao" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ITipoMovimentacao.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ProdutosPrePago.ICliente" Collapsed="true">
+    <Position X="4.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICliente.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Enum Name="ProdutosPrePago.TipoMovimentacaoEnum">
-    <Position X="0.5" Y="4.5" Width="1.5" />
+    <Position X="0.5" Y="5.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAQAIAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TipoMovimentacaoEnum.cs</FileName>

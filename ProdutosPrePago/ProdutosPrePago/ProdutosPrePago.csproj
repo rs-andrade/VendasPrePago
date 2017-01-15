@@ -44,6 +44,13 @@
     <Compile Include="Contrato.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="FilaFaturamento.cs" />
+    <Compile Include="ICliente.cs" />
+    <Compile Include="IContrato.cs" />
+    <Compile Include="IEntity.cs" />
+    <Compile Include="IFilaFaturamento.cs" />
+    <Compile Include="IMovimentacao.cs" />
+    <Compile Include="IProduto.cs" />
+    <Compile Include="ITipoMovimentacao.cs" />
     <Compile Include="NaoAtingiuValorMinimoRecargaException.cs" />
     <Compile Include="SaldoInsuficienteParaConsumoException.cs" />
     <Compile Include="TipoMovimentacaoEnum.cs" />

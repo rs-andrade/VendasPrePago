@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace ProdutosPrePago
 {
-    public class Cliente: Entity
+    public class Cliente : Entity, ICliente
     {
-        public Contrato ContratarProduto(Produto produto)
+        public IContrato ContratarProduto(Produto produto)
         {
             throw new NotImplementedException();
         }
 
-        public List<Contrato> ListarContratos()
+        public List<IContrato> ListarContratos()
         {
             throw new NotImplementedException();
         }

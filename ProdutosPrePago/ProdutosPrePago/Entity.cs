@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProdutosPrePago
 {
-    public class Entity
+    public class Entity : IEntity
     {
         public int Id { get; set; }
     }

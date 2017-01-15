@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProdutosPrePago
 {
-    public class Produto: Entity
+    public class Produto : Entity, IProduto
     {
         public string Descricao { get; set; }
         public decimal TaxaRecarga { get; set; }
