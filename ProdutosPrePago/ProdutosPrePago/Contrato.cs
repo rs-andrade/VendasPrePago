@@ -21,6 +21,7 @@ namespace ProdutosPrePago
             Produto = produto;
             Identificacao = identificacao;
             DataDaContratacao = DateTime.Now.Date;
+            Movimentacoes = new List<IMovimentacao>();
         }
 
         public void Recarregar(decimal valorRecarga, IFilaFaturamento filaFaturamento)
@@ -53,7 +54,7 @@ namespace ProdutosPrePago
             }
             Movimentacoes.Add(movimentacaoRecarga);
             if (movimentacaoTaxa != null)
-                Movimentacoes.Add(movimentacaoRecarga);
+                Movimentacoes.Add(movimentacaoTaxa);
         }
 
         public void ConsumirCredito(decimal valorConsumo)
@@ -63,12 +64,13 @@ namespace ProdutosPrePago
 
             if (valorConsumo <= ConsultarSaldo())
             {
-                var movimentacaoRecarga = new Movimentacao
+                var movimentacaoConsumo = new Movimentacao
                 {
                     Data = DateTime.Now.Date,
                     Valor = -valorConsumo,
                     Tipo = new TipoMovimentacaoConsumo { TipoDaMovimentacao = TipoMovimentacaoEnum.Recarga }
                 };
+                Movimentacoes.Add(movimentacaoConsumo);
             }
             else
                 throw new SaldoInsuficienteParaConsumoException();

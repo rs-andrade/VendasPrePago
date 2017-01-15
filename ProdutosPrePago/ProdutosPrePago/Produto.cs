@@ -15,7 +15,7 @@ namespace ProdutosPrePago
         {
             if (TaxaRecarga > 0)
             {
-                var valorTaxa = Math.Round(valorRecarga * TaxaRecarga, 2);
+                var valorTaxa = Math.Round(valorRecarga * TaxaRecarga / 100, 2);
                 if (valorTaxa == 0)
                     throw new NaoAtingiuValorMinimoRecargaException();
                 return valorTaxa;

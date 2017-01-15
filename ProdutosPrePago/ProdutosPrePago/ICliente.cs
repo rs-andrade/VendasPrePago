@@ -4,7 +4,7 @@ namespace ProdutosPrePago
 {
     public interface ICliente: IEntity
     {
-        IContrato ContratarProduto(Produto produto);
+        IContrato ContratarProduto(IProduto produto);
         List<IContrato> ListarContratos();
     }
 }

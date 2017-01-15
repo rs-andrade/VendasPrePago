@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProdutosPrePago.Services", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProdutosPrePago.Fault", "ProdutosPrePago.Fault\ProdutosPrePago.Fault.csproj", "{15191C68-9E37-4B0C-A74C-C7E62843943E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProdutosPrePago.Test", "ProdutosPrePago.Test\ProdutosPrePago.Test.csproj", "{6F56C947-FA94-45FD-8551-83869ED0A1E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{15191C68-9E37-4B0C-A74C-C7E62843943E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15191C68-9E37-4B0C-A74C-C7E62843943E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15191C68-9E37-4B0C-A74C-C7E62843943E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F56C947-FA94-45FD-8551-83869ED0A1E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F56C947-FA94-45FD-8551-83869ED0A1E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F56C947-FA94-45FD-8551-83869ED0A1E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F56C947-FA94-45FD-8551-83869ED0A1E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

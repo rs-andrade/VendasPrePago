@@ -4,21 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProdutosPrePago
+namespace ProdutosPrePago.Test.Builder
 {
-    public class Cliente : Entity, ICliente
+    public class BuilderCliente : ICliente
     {
+        public int Id { get; set; }
+
         public IContrato ContratarProduto(IProduto produto)
         {
-            throw new NotImplementedException();
+            return new Contrato(this, produto, "Meu carro");
         }
 
         public List<IContrato> ListarContratos()
-        {
-            throw new NotImplementedException();
-        }
-
-        public static Cliente ConsultarPorIdCliente(int IdCliente)
         {
             throw new NotImplementedException();
         }
