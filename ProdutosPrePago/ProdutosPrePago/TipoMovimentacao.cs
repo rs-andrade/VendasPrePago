@@ -1,4 +1,7 @@
 ﻿namespace ProdutosPrePago
 {
-    public enum TipoMovimentacao {Recarga, Taxa, Consumo }
+    public abstract class TipoMovimentacao
+    {
+        public TipoMovimentacaoEnum TipoDaMovimentacao;        
+    }
 }

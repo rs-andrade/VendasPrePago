@@ -43,14 +43,18 @@
     <Compile Include="Cliente.cs" />
     <Compile Include="Contrato.cs" />
     <Compile Include="Entity.cs" />
+    <Compile Include="TipoMovimentacaoEnum.cs" />
     <Compile Include="Fatura.cs" />
     <Compile Include="Movimentacao.cs" />
     <Compile Include="Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TipoMovimentacao.cs" />
+    <Compile Include="TiposMovimentacao\TipoMovimentcaoConsumo.cs" />
+    <Compile Include="TiposMovimentacao\TipoMovimentcaoTaxaRecarga.cs" />
+    <Compile Include="TiposMovimentacao\TipoMovimentcaoRecarga.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
