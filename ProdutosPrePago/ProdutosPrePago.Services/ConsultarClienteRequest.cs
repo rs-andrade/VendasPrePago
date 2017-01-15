@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProdutosPrePago.Services
 {
-    public class ContratacaoRequest
+    public class ConsultarClienteRequest
     {
-        public int IdCliente { get; set; }
-        public int IdProduto { get; set; }
+        public string CPFCNPJ { get; set; }
     }
 }

@@ -8,8 +8,7 @@ namespace ProdutosPrePago.Services
 {
     public class ConsumoRequest
     {
-        public int IdCliente { get; set; }
-        public int IdProduto { get; set; }
+        public int IdContrato { get; set; }
         public decimal ValorConsumo { get; set; }
     }
 }

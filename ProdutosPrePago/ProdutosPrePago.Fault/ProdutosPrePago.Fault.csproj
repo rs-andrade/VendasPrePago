@@ -40,14 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClienteNaoCadastradoFault.cs" />
     <Compile Include="ClienteInvalidoFault.cs" />
-    <Compile Include="ClienteJaCadastradoNoProdutoFault.cs" />
-    <Compile Include="ClienteSemContratoFault.cs" />
-    <Compile Include="DescricaoProdutoInvalidaFault.cs" />
     <Compile Include="FaultBase.cs" />
     <Compile Include="NaoAtingiuValorMinimoRecargaFault.cs" />
-    <Compile Include="ProdutoInvalidoFault.cs" />
-    <Compile Include="ProdutoJaCadastradoFault.cs" />
+    <Compile Include="ContratoInvalidoFault.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SaldoInsuficienteParaConsumoFault.cs" />
     <Compile Include="ValorInvalidoParaConsumoFault.cs" />

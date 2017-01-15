@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProdutosPrePago.Services
 {
-    public class CadastrarProdutoRequest
+    public class ConultarContratosResponse
     {
-        public int Id { get; set; }
-        public string Descricao { get; set; }
+        public List<Contrato> Contratos { get; set; }        
     }
 }

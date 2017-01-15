@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace ProdutosPrePago.Services
 {
-    public class RecargaRequest
+    public class Contrato
     {
         public int IdContrato { get; set; }
-        public decimal ValorRecarga { get; set; }
+        public DateTime DataContratacao { get; set; }
+        public string Identificacao { get; set; }
+        public string DescricaoProduto { get; set; }
     }
 }

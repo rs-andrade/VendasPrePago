@@ -40,11 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CadastrarProdutoRequest.cs" />
+    <Compile Include="ConsultarClienteResponse.cs" />
+    <Compile Include="ConsultarClienteRequest.cs" />
+    <Compile Include="ConsultarContratosResponse.cs" />
     <Compile Include="ConsultaSaldoRequest.cs" />
     <Compile Include="ConsultaSaldoResponse.cs" />
     <Compile Include="ConsumoRequest.cs" />
-    <Compile Include="ContratacaoRequest.cs" />
+    <Compile Include="ConsultarContratosRequest.cs" />
+    <Compile Include="Contrato.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecargaRequest.cs" />
   </ItemGroup>

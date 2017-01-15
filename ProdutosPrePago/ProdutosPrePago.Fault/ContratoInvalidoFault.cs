@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProdutosPrePago.Fault
 {
-    public class ClienteSemContratoFault : FaultBase
+    public class ContratoInvalidoFault : FaultBase
     {
-        public ClienteSemContratoFault(string message) : base(message)
+        public ContratoInvalidoFault(string message) : base(message)
         {
         }
     }

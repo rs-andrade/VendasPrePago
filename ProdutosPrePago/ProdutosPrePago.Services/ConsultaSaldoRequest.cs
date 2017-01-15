@@ -8,7 +8,6 @@ namespace ProdutosPrePago.Services
 {
     public class ConsultaSaldoRequest
     {
-        public int IdCliente { get; set; }
-        public int IdProduto { get; set; }
+        public int IdContrato { get; set; }
     }
 }

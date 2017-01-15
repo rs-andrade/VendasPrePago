@@ -7,27 +7,6 @@
       <FileName>ClienteInvalidoFault.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ProdutosPrePago.Fault.ClienteJaCadastradoNoProdutoFault" Collapsed="true">
-    <Position X="5.75" Y="3" Width="2.75" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ClienteJaCadastradoNoProdutoFault.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="ProdutosPrePago.Fault.ClienteSemContratoFault" Collapsed="true">
-    <Position X="1.25" Y="4.25" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ClienteSemContratoFault.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="ProdutosPrePago.Fault.DescricaoProdutoInvalidaFault" Collapsed="true">
-    <Position X="5.75" Y="4.25" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>DescricaoProdutoInvalidaFault.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="ProdutosPrePago.Fault.FaultBase">
     <Position X="4.5" Y="0.5" Width="1.5" />
     <Compartments>
@@ -39,22 +18,15 @@
       <FileName>FaultBase.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ProdutosPrePago.Fault.ProdutoInvalidoFault" Collapsed="true">
-    <Position X="8.75" Y="3" Width="1.75" />
+  <Class Name="ProdutosPrePago.Fault.ContratoInvalidoFault" Collapsed="true">
+    <Position X="5.75" Y="3" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ProdutoInvalidoFault.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="ProdutosPrePago.Fault.ProdutoJaCadastradoFault" Collapsed="true">
-    <Position X="3.5" Y="4.25" Width="2" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ProdutoJaCadastradoFault.cs</FileName>
+      <FileName>ContratoInvalidoFault.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProdutosPrePago.Fault.SaldoInsuficienteParaConsumoFault" Collapsed="true">
-    <Position X="8.25" Y="4.25" Width="2.75" />
+    <Position X="2" Y="4.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>SaldoInsuficienteParaConsumoFault.cs</FileName>
@@ -68,17 +40,24 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ProdutosPrePago.Fault.ValorInvalidoParaRecargaFault" Collapsed="true">
-    <Position X="10.75" Y="3" Width="2.25" />
+    <Position X="7.75" Y="3" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ValorInvalidoParaRecargaFault.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProdutosPrePago.Fault.NaoAtingiuValorMinimoRecargaFault" Collapsed="true">
-    <Position X="11.25" Y="4.25" Width="2.75" />
+    <Position X="5.25" Y="4.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>NaoAtingiuValorMinimoRecargaFault.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProdutosPrePago.Fault.ClienteNaoCadastradoFault" Collapsed="true">
+    <Position X="8.25" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClienteNaoCadastradoFault.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
