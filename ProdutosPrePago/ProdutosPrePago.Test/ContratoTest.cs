@@ -11,7 +11,7 @@ namespace ProdutosPrePago.Test
         public void DeveRecarregar100ComTaxade3()
         {
             var contrato = CriarContrato(3);
-            contrato.Recarregar(100, new BuilderFilaFaturamento());
+            contrato.Recarregar(100, 1, new BuilderFilaFaturamento());
             Assert.AreEqual(97, contrato.ConsultarSaldo());
             Assert.AreEqual(2, contrato.Movimentacoes.Count);
         }
@@ -20,7 +20,7 @@ namespace ProdutosPrePago.Test
         public void DeveRecarregar25e25ComTaxade76Centavos()
         {
             var contrato = CriarContrato(3);
-            contrato.Recarregar(25.25m, new BuilderFilaFaturamento());
+            contrato.Recarregar(25.25m, 1, new BuilderFilaFaturamento());
             Assert.AreEqual(24.49m, contrato.ConsultarSaldo());
             Assert.AreEqual(2, contrato.Movimentacoes.Count);
         }
@@ -29,7 +29,7 @@ namespace ProdutosPrePago.Test
         public void DeveRecarregar100ComTaxade0()
         {
             var contrato = CriarContrato(0);
-            contrato.Recarregar(100, new BuilderFilaFaturamento());
+            contrato.Recarregar(100, 1, new BuilderFilaFaturamento());
             Assert.AreEqual(100, contrato.ConsultarSaldo());
             Assert.AreEqual(1, contrato.Movimentacoes.Count);
         }
@@ -39,7 +39,7 @@ namespace ProdutosPrePago.Test
         public void NaoDeveRecarregarMenos100()
         {
             var contrato = CriarContrato(3);
-            contrato.Recarregar(-100, new BuilderFilaFaturamento());
+            contrato.Recarregar(-100, 1, new BuilderFilaFaturamento());
         }
 
         [TestMethod]
@@ -47,7 +47,7 @@ namespace ProdutosPrePago.Test
         public void NaoDeveRecarregar0()
         {
             var contrato = CriarContrato(3);
-            contrato.Recarregar(0, new BuilderFilaFaturamento());
+            contrato.Recarregar(0, 1, new BuilderFilaFaturamento());
         }
 
         [TestMethod]
@@ -55,17 +55,17 @@ namespace ProdutosPrePago.Test
         public void NaoDeveRecarregar10CentavosComTaxaDe3()
         {
             var contrato = CriarContrato(3);
-            contrato.Recarregar(0.10m, new BuilderFilaFaturamento());
+            contrato.Recarregar(0.10m, 1, new BuilderFilaFaturamento());
         }
 
         [TestMethod]
         public void DeveRecarregar100ComTaxade3EConsumir20()
         {
             var contrato = CriarContrato(3);
-            contrato.Recarregar(100, new BuilderFilaFaturamento());
+            contrato.Recarregar(100, 1, new BuilderFilaFaturamento());
             Assert.AreEqual(97, contrato.ConsultarSaldo());
             Assert.AreEqual(2, contrato.Movimentacoes.Count);
-            contrato.ConsumirCredito(20);
+            contrato.ConsumirCredito(20, 1);
             Assert.AreEqual(77, contrato.ConsultarSaldo());
         }
 
@@ -73,10 +73,10 @@ namespace ProdutosPrePago.Test
         public void DeveRecarregar100ComTaxade3EConsumir97()
         {
             var contrato = CriarContrato(3);
-            contrato.Recarregar(100, new BuilderFilaFaturamento());
+            contrato.Recarregar(100, 1, new BuilderFilaFaturamento());
             Assert.AreEqual(97, contrato.ConsultarSaldo());
             Assert.AreEqual(2, contrato.Movimentacoes.Count);
-            contrato.ConsumirCredito(97);
+            contrato.ConsumirCredito(97, 1);
             Assert.AreEqual(0, contrato.ConsultarSaldo());
         }
 
@@ -85,10 +85,10 @@ namespace ProdutosPrePago.Test
         public void DeveRecarregar100ComTaxade3ENaoDeveConsumir100()
         {
             var contrato = CriarContrato(3);
-            contrato.Recarregar(100, new BuilderFilaFaturamento());
+            contrato.Recarregar(100, 1, new BuilderFilaFaturamento());
             Assert.AreEqual(97, contrato.ConsultarSaldo());
             Assert.AreEqual(2, contrato.Movimentacoes.Count);
-            contrato.ConsumirCredito(100);            
+            contrato.ConsumirCredito(100, 1);            
         }
 
         [TestMethod]
@@ -96,8 +96,8 @@ namespace ProdutosPrePago.Test
         public void NaoDeveConsumirMenos100()
         {
             var contrato = CriarContrato(3);
-            contrato.Recarregar(100, new BuilderFilaFaturamento());
-            contrato.ConsumirCredito(-100);
+            contrato.Recarregar(100, 1, new BuilderFilaFaturamento());
+            contrato.ConsumirCredito(-100, 1);
         }
 
         [TestMethod]
@@ -105,8 +105,8 @@ namespace ProdutosPrePago.Test
         public void NaoDeveConsumir0()
         {
             var contrato = CriarContrato(3);
-            contrato.Recarregar(100, new BuilderFilaFaturamento());
-            contrato.ConsumirCredito(0);
+            contrato.Recarregar(100, 1, new BuilderFilaFaturamento());
+            contrato.ConsumirCredito(0, 1);
         }
 
         private static IContrato CriarContrato(decimal taxaRecarga)

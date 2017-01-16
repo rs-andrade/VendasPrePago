@@ -24,7 +24,7 @@ namespace ProdutosPrePago
             Movimentacoes = new List<IMovimentacao>();
         }
 
-        public void Recarregar(decimal valorRecarga, IFilaFaturamento filaFaturamento)
+        public void Recarregar(decimal valorRecarga, int IdEstabelecimento, IFilaFaturamento filaFaturamento)
         {
             if (valorRecarga <= 0)
                 throw new ValorInvalidoParaRecargaException();
@@ -32,6 +32,7 @@ namespace ProdutosPrePago
             var movimentacaoRecarga = new Movimentacao {
                 Data = DateTime.Now.Date,
                 Valor = valorRecarga,
+                IdEstabelecimento =  IdEstabelecimento,
                 Tipo = new TipoMovimentacaoRecarga { TipoDaMovimentacao = TipoMovimentacaoEnum.Recarga}
             };
 
@@ -49,6 +50,7 @@ namespace ProdutosPrePago
                 {
                     Data = DateTime.Now.Date,
                     Valor = -valorTaxa,
+                    IdEstabelecimento = IdEstabelecimento,
                     Tipo = new TipoMovimentacaoTaxaRecarga { TipoDaMovimentacao = TipoMovimentacaoEnum.TaxaRecarga, PercentualTaxa = Produto.TaxaRecarga }
                 };
             }
@@ -57,7 +59,7 @@ namespace ProdutosPrePago
                 Movimentacoes.Add(movimentacaoTaxa);
         }
 
-        public void ConsumirCredito(decimal valorConsumo)
+        public void ConsumirCredito(decimal valorConsumo, int IdEstabelecimento)
         {
             if (valorConsumo <= 0)
                 throw new ValorInvalidoParaConsumoException();
@@ -68,6 +70,7 @@ namespace ProdutosPrePago
                 {
                     Data = DateTime.Now.Date,
                     Valor = -valorConsumo,
+                    IdEstabelecimento = IdEstabelecimento,
                     Tipo = new TipoMovimentacaoConsumo { TipoDaMovimentacao = TipoMovimentacaoEnum.Recarga }
                 };
                 Movimentacoes.Add(movimentacaoConsumo);

@@ -12,7 +12,7 @@ namespace ProdutosPrePago
         IProduto Produto { get; }
 
         decimal ConsultarSaldo();
-        void ConsumirCredito(decimal valorConsumo);
-        void Recarregar(decimal valorRecarga, IFilaFaturamento filaFaturamento);
+        void ConsumirCredito(decimal valorConsumo, int IdEstabelecimento);
+        void Recarregar(decimal valorRecarga, int IdEstabelecimento, IFilaFaturamento filaFaturamento);
     }
 }

@@ -9,6 +9,7 @@ namespace ProdutosPrePago.Services
     public class RecargaRequest
     {
         public int IdContrato { get; set; }
+        public int IdEstabelecimento { get; set; }
         public decimal ValorRecarga { get; set; }
     }
 }

@@ -6,6 +6,7 @@ namespace ProdutosPrePago
     {
         DateTime Data { get; set; }
         ITipoMovimentacao Tipo { get; set; }
+        int IdEstabelecimento { get; set; }
         decimal Valor { get; set; }
     }
 }

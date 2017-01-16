@@ -42,7 +42,7 @@ namespace ProdutosPrePago.Services
             var contrato = ConsultarContratoPorId(consumoRequest.IdContrato);
             try
             {
-                contrato.ConsumirCredito(consumoRequest.ValorConsumo);
+                contrato.ConsumirCredito(consumoRequest.ValorConsumo, consumoRequest.IdEstabelecimento);
             }
             catch (ValorInvalidoParaConsumoException ex)
             {
@@ -60,7 +60,7 @@ namespace ProdutosPrePago.Services
             
             try
             {
-                contrato.Recarregar(recargaRequest.ValorRecarga, new FilaFaturamento());
+                contrato.Recarregar(recargaRequest.ValorRecarga, recargaRequest.IdEstabelecimento, new FilaFaturamento());
             }
             catch (ValorInvalidoParaRecargaException ex)
             {

@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="ProdutosPrePago.Services.ConsultaSaldoRequest">
-    <Position X="4" Y="2.25" Width="1.75" />
+    <Position X="4.5" Y="2.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
       <FileName>ConsultaSaldoRequest.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProdutosPrePago.Services.ConsultaSaldoResponse">
-    <Position X="6" Y="2.25" Width="2" />
+    <Position X="6.5" Y="2.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>ConsultaSaldoResponse.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProdutosPrePago.Services.ConsumoRequest">
-    <Position X="2.25" Y="2.25" Width="1.5" />
+    <Position X="2.5" Y="2.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAABAAAAA=</HashCode>
       <FileName>ConsumoRequest.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -29,9 +29,9 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ProdutosPrePago.Services.RecargaRequest">
-    <Position X="0.5" Y="2.25" Width="1.5" />
+    <Position X="0.5" Y="2.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAADAAAAA=</HashCode>
       <FileName>RecargaRequest.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -53,14 +53,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ProdutosPrePago.Services.ConsultarClienteRequest">
-    <Position X="0.5" Y="3.75" Width="2" />
+    <Position X="0.5" Y="4" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ConsultarClienteRequest.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProdutosPrePago.Services.ConsultarClienteResponse">
-    <Position X="2.75" Y="3.75" Width="2" />
+    <Position X="2.75" Y="4" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAIAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>ConsultarClienteResponse.cs</FileName>
@@ -68,7 +68,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ProdutosPrePago.Services.FaturarRequest">
-    <Position X="5" Y="3.75" Width="1.5" />
+    <Position X="5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAABAAAAAAAAAAAAAAAAAEAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>FaturarRequest.cs</FileName>
